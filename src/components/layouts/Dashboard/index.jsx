@@ -64,6 +64,12 @@ var HomePage = React.createClass({
                     <Link to="/dashboard/overview">Overview</Link>
                   </li> 
                   <li>
+                    <Link to="/dashboard/randomWords">Random Words</Link>
+                  </li> 
+                  <li>
+                    <Link to="/searchApp">Search App</Link>
+                  </li> 
+                  <li>
                     <Link to="/dashboard/reports">Reports</Link>
                   </li> 
                   <li>

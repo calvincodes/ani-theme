@@ -8,7 +8,6 @@
 
 # production
 /build
-build/*
 
 # misc
 .DS_Store
@@ -55,3 +54,5 @@ chrome-user-data
 *.swo
 *react*min*.js
 !src/node_modules
+build/1.app.js
+package-lock.json

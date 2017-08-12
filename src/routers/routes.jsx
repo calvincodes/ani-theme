@@ -7,6 +7,8 @@ import DashboardLayout from "../components/layouts/Dashboard";
 import DashboardOverviewPage from "../components/pages/dashboard/Overview";
 import DashboardReportsPage from "../components/pages/dashboard/Reports";
 import LoginPage from "../components/pages/Login";
+import RandomWordsPage from "../components/pages/dashboard/Words";
+import SearchApp from "../components/pages/elastic/SearchApp";
 
 var Routes = React.createClass({
 
@@ -16,9 +18,11 @@ var Routes = React.createClass({
           <Route name="base" path="/" handler={BaseLayout}>
             <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
               <Route name="dashboard.overview" path="/overview" handler={DashboardOverviewPage} />
+              <Route name="dashboard.randomWords" path="/randomWords" handler={RandomWordsPage} />
               <Route name="dashboard.reports" path="/reports" handler={DashboardReportsPage} />
               <DefaultRoute name="dashboard.default" handler={DashboardOverviewPage} />
             </Route>
+            <Route name="searchApp" path="/searchApp" handler={SearchApp} />
             <Route name="login" path="/login" handler={LoginPage} />
             <DefaultRoute name="default" handler={DashboardLayout} />
             <Redirect from="/" to="dashboard.overview" />

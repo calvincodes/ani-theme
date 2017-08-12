@@ -21,12 +21,19 @@ const rootRoute = {
       indexRoute: {component: require('./components/pages/dashboard/Overview')},
       childRoutes: [
         require('./components/pages/dashboard/Overview'),
-        require('./components/pages/dashboard/Reports')
+        require('./components/pages/dashboard/Reports'),
+        require('./components/pages/dashboard/Words')
       ]
     },
     {
       path: '/login',
       component: require('./components/pages/Login'),
+      childRoutes: [
+      ]
+    },
+    {
+      path: '/searchApp',
+      component: require('./components/pages/elastic/SearchApp'),
       childRoutes: [
       ]
     }
